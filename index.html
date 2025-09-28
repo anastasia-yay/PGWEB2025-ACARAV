@@ -44,7 +44,7 @@
         let toponimi = L.layerGroup();
 
         // Load geojson file
-        fetch('data/toponimi.geojson')
+        fetch('DATA/toponimi.geojson')
             .then(response => response.json())
             .then(data => {
                 L.geoJSON(data, {
