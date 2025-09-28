@@ -46,8 +46,8 @@
         // Load geojson file
         fetch('DATA/toponimi.geojson')
             .then(response => response.json())
-            .then(data => {
-                L.geoJSON(data, {
+            .then(DATA => {
+                L.geoJSON(DATA, {
                     pointToLayer: function (feature, latlng) {
                         return L.marker(latlng, {
                             icon: L.icon({
